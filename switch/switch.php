@@ -1,15 +1,15 @@
 <?php
-$number = 0; //value
-echo "the number is: $person <br>";
-switch ($number) {
-	case $number > 0:
-		echo 'positive';
+$name = 'Frank'; //value
+echo ('the name is: '.$name.'<br>'); // prints out the value
+switch ($name) {
+	case $name == 'Sarah': //statement
+		echo 'it\'s Sarah'; // prints out text
 		break;
-	case $number < 0:
-		echo 'negative';
+	case $name == 'Jack': //statement
+		echo 'it\'s Jack'; //prints out text
 		break;
-	default:
-		echo 'zero';
+	default: //it's like else
+		echo 'it\'s nobody'; // will print out this if any of the upper comparisons get true
 		break;
 }
 ?>
