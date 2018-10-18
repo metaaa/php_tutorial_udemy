@@ -13,21 +13,28 @@ $people = [ //declaration of the array
 var_dump($people); //print out the types
 //multi-dimensional array
 echo "</br></br><u>multi-dimensional array</u></br></br>";//simple echo
-$users = [ //declaration of a multi-dimensional array (an array inside array)
+$users = [ //declaration of a multi-dimensional array (arrays inside an array)
 	[
 		'username' => 'alex',
-		'email' => 'alex@email.com'
+		'email' => 'alex@email.com',
+		'likes' => ['cats', 'food']
 	],
 	[
 		'username' => 'billy',
-		'email' => 'billy@email.com'
+		'email' => 'billy@email.com',
+		'likes' => ['books', 'cats']
 	]
 ];
 echo "</br></br>";
 echo '<pre>', var_dump($users), '</pre>'; //print out the array's structure and values
 echo("</br>");
-echo $users[1][email]; //print out the second users email address
+echo $users[1][email].'</br>'; //print out the second user's email address
+echo $users[0][likes][0].'</br>'; //print out the first user's first like
 
+echo "</br><u>printing out the multi multi-dimensional array</u></br></br>";
 
-
+foreach ($users as $user) {
+	var_dump($user);
+	echo '</br>';
+}
 ?>
