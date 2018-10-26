@@ -1,6 +1,6 @@
 <?php
 
-$dayOfWeek = 7;
+$dayOfWeek = 1;
 if ($dayOfWeek == 1) { //simple if statement with a single comparison
 	echo "it is monday";
 } elseif ($dayOfWeek == 2) {
@@ -19,10 +19,17 @@ $daysOfWeek = [
 ];
 
 if (in_array($dayOfWeek, array_keys($daysOfWeek))){
+	echo $daysOfWeek[$dayOfWeek] . "</br>";
+} else {
+	echo "that is not a valid day bro</br>";
+}
+
+if (array_key_exists($dayOfWeek, $daysOfWeek)){
 	echo $daysOfWeek[$dayOfWeek];
 } else {
-	echo "that is not a valid day";
+	echo "that is not a valid day bro";
 }
+
 //if nesting
 $name = "Alex Strapadopoupolou";
 
@@ -40,7 +47,7 @@ if (!$name){
 }
 echo "your name is " . $name;
 if (strlen($name) > 10){
-	echo "</br>you have along name...</br>"
+	echo "</br>you have along name...</br>";
 }
 
 
