@@ -1,5 +1,4 @@
 <?php
-//foreach loop
 $names = ['alex', 'billy', 'dale'];
 //simple for
 for ($i = 0; $i < count($names); $i++) { 
@@ -34,10 +33,10 @@ $topics = [
 	],
 ];
 
-foreach ($topics as $topic) {
-	echo '<h1>' . $topic['title'], "</h1>";
-	foreach ($topic['posts'] as $post) {
-		echo '<p>' . $post['body'] . '</p>';
+foreach ($topics as $topic) { //each member of the topics array will be stored in topic variable
+	echo '<h1>' . $topic['title'], "</h1>"; // print out the topics' title
+	foreach ($topic['posts'] as $post) { //each member of the topics array's posts array (associative array) will be stored in the post variable
+		echo '<p>' . $post['body'] . '</p>'; //print out the posts
 	}
 }
 
