@@ -1,0 +1,1 @@
+<h2>There will be the news</h2>
